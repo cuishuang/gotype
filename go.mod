@@ -1,4 +1,5 @@
-module dashen
+module github.com/cuishuang/gotype
+
 
 go 1.13
 
