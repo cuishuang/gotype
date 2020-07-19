@@ -1,8 +1,12 @@
-module github.com/isdamir/gotype
+module dashen
 
-go 1.12
+go 1.13
 
 require (
-	github.com/isdamir/assert v0.0.0-20180331014554-0b0d0ef4fa54
-	github.com/kr/pretty v0.1.0 // indirect
+	github.com/cuishuang/assert v0.0.0-20180331014554-0b0d0ef4fa54
+	github.com/kr/pretty v0.2.0 // indirect
 )
+
+replace  (
+        github.com/isdamir/gotype => github.com/cuishuang/gotype //indirect
+        )

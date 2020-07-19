@@ -23,10 +23,30 @@ func CreateNodeInt(node *ListNode, max int) {
 	cur := node
 	for i := 1; i < max; i++ {
 		cur.Next = &ListNode{}
-		cur.Next.Data = i
+		cur.Next.Val = i
 		cur = cur.Next
 	}
 }
+
+
+//创建链表--入参为一个数组
+//爽哥新增
+func CreateNodeIntBySli(sli []int, n int) *ListNode {
+
+
+	cur := &ListNode{}
+
+	for i := 0; i < n; i++ {
+		cur.Next = &ListNode{}
+
+		cur.Next.Val = sli[i]
+		cur = cur.Next
+	}
+
+	return
+}
+
+
 
 
 
@@ -42,10 +62,10 @@ func PrintNode(info string, node *LNode) {
 
 //打印链表的方法
 //爽哥新增
-func PrintNode(info string, node *ListNode) {
+func PrintNodeInt(info string, node *ListNode) {
 	fmt.Print(info)
 	for cur := node.Next; cur != nil; cur = cur.Next {
-		fmt.Print(cur.Data, " ")
+		fmt.Print(cur.Val, " ")
 	}
 	fmt.Println()
 }

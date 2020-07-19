@@ -2,7 +2,7 @@ package gotype
 
 import (
 	"fmt"
-	"github.com/isdamir/assert"
+	"github.com/cuishuang/assert"
 	"testing"
 )
 

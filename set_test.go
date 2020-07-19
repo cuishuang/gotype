@@ -1,7 +1,7 @@
 package gotype
 
 import (
-	"github.com/isdamir/assert"
+	"github.com/cuishuang/assert"
 	"testing"
 )
 
