@@ -1,5 +1,4 @@
-module github.com/cuishuang/gotype
-
+module first
 
 go 1.13
 

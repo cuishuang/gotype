@@ -65,6 +65,7 @@ type LinkedStack struct {
 	sync.RWMutex
 }
 
+
 //链表所写的stack
 //爽哥新增
 type LinkedStackInt struct {
@@ -77,8 +78,8 @@ func NewLinkedStack() *LinkedStack {
 }
 
 //爽哥新增
-func NewLinkedStackInt() *LinkedStack {
-	return &LinkedStack{head: &ListNode{}}
+func NewLinkedStackInt() *LinkedStackInt {
+	return &LinkedStackInt{head: &ListNode{}}
 }
 
 

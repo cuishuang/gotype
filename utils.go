@@ -16,7 +16,6 @@ func CreateNode(node *LNode, max int) {
 	}
 }
 
-
 //创建链表
 //爽哥新增
 func CreateNodeInt(node *ListNode, max int) {
@@ -28,11 +27,9 @@ func CreateNodeInt(node *ListNode, max int) {
 	}
 }
 
-
 //创建链表--入参为一个数组
 //爽哥新增
 func CreateNodeIntBySli(sli []int, n int) *ListNode {
-
 
 	cur := &ListNode{}
 
@@ -43,12 +40,8 @@ func CreateNodeIntBySli(sli []int, n int) *ListNode {
 		cur = cur.Next
 	}
 
-	return
+	return cur
 }
-
-
-
-
 
 //打印链表的方法
 func PrintNode(info string, node *LNode) {
@@ -59,7 +52,6 @@ func PrintNode(info string, node *LNode) {
 	fmt.Println()
 }
 
-
 //打印链表的方法
 //爽哥新增
 func PrintNodeInt(info string, node *ListNode) {
@@ -69,8 +61,6 @@ func PrintNodeInt(info string, node *ListNode) {
 	}
 	fmt.Println()
 }
-
-
 
 //通过数组创建中序的二叉树
 func ArrayToTree(arr []int, start int, end int) *BNode {

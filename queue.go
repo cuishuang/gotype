@@ -144,10 +144,10 @@ func (p *LinkedQueue) EnQueue(e interface{}) {
 
 //入队列：把元素e加到队列尾
 // 爽哥新增
-func (p *LinkedQueueInt) EnQueue(e interface{}) {
+func (p *LinkedQueueInt) EnQueue(e int) {
 	p.Lock()
 	defer p.Unlock()
-	node := &ListNode{Data: e}
+	node := &ListNode{Val: e}
 	if p.head == nil {
 		p.head = node
 		p.end = node
