@@ -6,7 +6,7 @@ import (
 
 //定义用于演示算法时的一些公共方法
 
-//创建链表
+// 创建链表
 func CreateNode(node *LNode, max int) {
 	cur := node
 	for i := 1; i < max; i++ {
@@ -16,8 +16,8 @@ func CreateNode(node *LNode, max int) {
 	}
 }
 
-//创建链表
-//爽哥新增
+// 创建链表
+// 爽哥新增
 func CreateNodeInt(node *ListNode, max int) {
 	cur := node
 	for i := 1; i < max; i++ {
@@ -27,8 +27,8 @@ func CreateNodeInt(node *ListNode, max int) {
 	}
 }
 
-//创建链表--入参为一个数组
-//爽哥新增
+// 创建链表--入参为一个数组
+// 爽哥新增
 func CreateNodeIntBySli(sli []int, n int) *ListNode {
 
 	cur := &ListNode{}
@@ -43,7 +43,7 @@ func CreateNodeIntBySli(sli []int, n int) *ListNode {
 	return cur
 }
 
-//打印链表的方法
+// 打印链表的方法
 func PrintNode(info string, node *LNode) {
 	fmt.Print(info)
 	for cur := node.Next; cur != nil; cur = cur.Next {
@@ -52,8 +52,8 @@ func PrintNode(info string, node *LNode) {
 	fmt.Println()
 }
 
-//打印链表的方法
-//爽哥新增
+// 打印链表的方法
+// 爽哥新增
 func PrintNodeInt(info string, node *ListNode) {
 	fmt.Print(info)
 	for cur := node.Next; cur != nil; cur = cur.Next {
@@ -62,7 +62,7 @@ func PrintNodeInt(info string, node *ListNode) {
 	fmt.Println()
 }
 
-//通过数组创建中序的二叉树
+// 通过数组创建中序的二叉树
 func ArrayToTree(arr []int, start int, end int) *BNode {
 	var root *BNode
 	if end >= start {
@@ -78,7 +78,7 @@ func ArrayToTree(arr []int, start int, end int) *BNode {
 	return root
 }
 
-//用中序遍历的方式打印出二叉树结点的内容
+// 用中序遍历的方式打印出二叉树结点的内容
 func PrintTreeMidOrder(root *BNode) {
 	if root == nil {
 		return
@@ -95,7 +95,7 @@ func PrintTreeMidOrder(root *BNode) {
 	}
 }
 
-//层序打印二叉树
+// 层序打印二叉树
 func PrintTreeLayer(node *BNode) {
 	if node == nil {
 		return
@@ -150,7 +150,7 @@ func Max3(a, b, c int) int {
 	return Max(max, c)
 }
 
-//判断数字n的二进制数从右往左数第i位是否为1
+// 判断数字n的二进制数从右往左数第i位是否为1
 func IsOne(n, i int) bool {
 	return (uint(n) & (uint(1) << uint(i))) == 1
 }
